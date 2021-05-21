@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5198210400460229103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5198210400460229090}
+  - component: {fileID: 5198210400460229101}
+  - component: {fileID: 5198210400460229100}
+  - component: {fileID: 5198210399346127708}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5198210400460229090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5198210400460229103}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.5105047, y: -0.4, z: -0.20561518}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5198210400460229101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5198210400460229103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ade3b55dc0fd34a915a573564928c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToPool: 10
+  Rock: []
+  RockPrefab: {fileID: 4130425730450639129, guid: ad04b3175035e0540b94889b2ff854c0, type: 3}
+  Spear: []
+  SpearPrefab: {fileID: 6437078237007532039, guid: 7d58d9458e7402648ab12c80ed07a50c, type: 3}
+--- !u!114 &5198210400460229100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5198210400460229103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f074d17f2187340877861dcb6995ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameOver: {fileID: 0}
+  Complete: {fileID: 0}
+  pooler: {fileID: 5198210400460229101}
+--- !u!114 &5198210399346127708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5198210400460229103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e49d8cf826497047aaa4b8ab3a9048a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound:
+  - Name: throwRock
+    clip: {fileID: 8300000, guid: 4468b02e584280e44a0af95c4fdd7097, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - Name: throwSpear
+    clip: {fileID: 8300000, guid: 20a66832e7574664d81ee1d251df30c7, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - Name: luandaSpeak
+    clip: {fileID: 8300000, guid: cb21d4430ac27484a8feda10685a45a6, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - Name: EnemyHurt
+    clip: {fileID: 8300000, guid: 08d228d939f6b7f42bd2d7d6e1bb04a8, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
